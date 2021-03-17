@@ -2,5 +2,5 @@
 50 23 */3 * * find /scripts/logs -name '*.log' | grep -v 'sharecode' | xargs rm -rf
 
 # 日常任务
-node /scripts/jd_bean_home.js >> /scripts/logs/jd_bean_home.log 2>&1
-0 */2 * * * node /scripts/jd_bean_home.js >> /scripts/logs/jd_bean_home.log 2>&1
+sleep 0; node /scripts/jd_bean_home.js |ts >> /scripts/logs/jd_bean_home.log 2>&1
+#0 */2 * * * node /scripts/jd_bean_home.js >> /scripts/logs/jd_bean_home.log 2>&1
